@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 import Bootstrap, { Button } from 'react-bootstrap';
-import Currency from 'react-currency-conv';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import CurrencyRow from './CurrencyRow';
+import Currency from './react-currency-conv';
 
-const BASE_URL = 'https://api.exchangeratesapi.host/latest?base=huf';
+const BASE_URL = 'https://api.exchangerate.host/latest?base=huf';
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
@@ -57,7 +57,7 @@ function App() {
 
   return (
     <>
-      <h1>HUF</h1>
+      <h1>{fromCurrency}</h1>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
