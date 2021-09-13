@@ -73,6 +73,7 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
+      <h1>{toCurrency}</h1>
     </>
   );
 }
