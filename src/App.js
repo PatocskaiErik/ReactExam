@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React, { useEffect, useState } from 'react';
+import './style.css';
+import { Button } from 'react-bootstrap';
 
 export default function App() {
+
+  const CurrencyConverter = () => {
+    const [us] = useState("");
+    
+
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+
+      <input type="number" />
     </div>
   );
 }
