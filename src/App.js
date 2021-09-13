@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
-import Bootstrap, { Button } from 'react-bootstrap';
+import axios from './axios';
+import { Button } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import CurrencyRow from './CurrencyRow';
@@ -57,6 +58,7 @@ function App() {
 
   return (
     <>
+      <div className="title">Deviza váltás</div>
       <h1>{fromCurrency}</h1>
       <CurrencyRow
         currencyOptions={currencyOptions}

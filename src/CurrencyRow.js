@@ -13,6 +13,7 @@ export default function CurrencyRow(props) {
       <input
         type="number"
         className="input"
+        min="0"
         value={amount}
         onChange={onChangeAmount}
       />
