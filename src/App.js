@@ -6,7 +6,7 @@ import './App.css';
 import CurrencyRow from './CurrencyRow';
 import Currency from './react-currency-conv';
 
-const BASE_URL = 'https://api.exchangerate.host/latest?base=huf';
+const BASE_URL = 'https://api.exchangerate.host/latest?base';
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
