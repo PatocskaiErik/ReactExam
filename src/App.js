@@ -7,7 +7,7 @@ import './App.css';
 import CurrencyRow from './CurrencyRow';
 import Currency from './react-currency-conv';
 
-const BASE_URL = 'https://api.exchangerate.host/latest?base';
+const BASE_URL = 'https://api.exchangerate.host/latest';
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
@@ -58,8 +58,8 @@ function App() {
 
   return (
     <>
-      <div className="title">Deviza váltás</div>
-      <h1>{fromCurrency}</h1>
+      <h1>Deviza váltás</h1>
+      <h2>{fromCurrency}</h2>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
@@ -75,7 +75,7 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-      <h1>{toCurrency}</h1>
+      <h2>{toCurrency}</h2>
     </>
   );
 }
